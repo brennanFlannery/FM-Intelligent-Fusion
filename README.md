@@ -2,6 +2,14 @@
 
 Organized reference of all pipeline Python scripts across Kidney, Prostate, and Rectal cancer pathology projects, plus the shared CLAM/TRIDENT infrastructure. Files are copied from their source directories; originals remain in place.
 
+## Dependencies
+
+**Feature extraction** was performed using [TRIDENT](https://github.com/mahmoodlab/TRIDENT), an open-source whole-slide image processing framework available on GitHub. TRIDENT handles patch extraction, tissue segmentation, and embedding generation from foundation models.
+
+**CLAM model training and evaluation** scripts in this library are designed to work in conjunction with the [CLAM repository](https://github.com/mahmoodlab/CLAM), also available on GitHub. The CLAM repo provides the core MIL model definitions, dataset modules, and utilities that these scripts depend on — clone it alongside this library and ensure it is on your Python path before running anything in Groups 8–12.
+
+---
+
 **Source directories:**
 - `KidneyCancerPathology/`
 - `ProstateCancerPathology/`
